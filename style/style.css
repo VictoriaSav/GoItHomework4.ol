@@ -393,22 +393,47 @@ img {
   padding-top: 16px;
 }
 
-.card-soc-media-li {
+.card-soc-media-team {
+  width: 44px;
+  height: 44px;
   margin-right: 10px;
 }
 
-.card-soc-media-li::last-child {
+.card-soc-media-team::last-child {
   margin-right: 0;
 }
 
-.card-soc-link {
-  display: inline-flex;
+.card-soc-team {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  fill: #AFB1B8;
+}
+
+.card-soc-team:hover,
+.card-soc-team:focus {
+  background-color: var(--accent-color);
+}
+
+.card-soc-team-item {
+  fill: var(--client-icon-clr);
+}
+
+.card-soc-team:hover .card-soc-team-item,
+.card-soc-team:focus .card-soc-team-item {
+  fill: var(--accent-color);
+}
+
+.card-soc-team:hover .card-soc-team-item,
+.card-soc-team:focus .card-soc-team-item {
+  fill: var(--primary-white-color);
+}
+
+.card-soc-team-item:hover,
+.card-soc-team-item:focus {
+  fill: var(--primary-white-color);
 }
 
 /*--------------Client Card--------------*/
